@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="da">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hvad er madspild?</title>
+  <link rel="stylesheet" href="./styles.css">
+
+  <style>
+    /* Saddam */
+    :root{
+      --bg: linen;                 /* beige */
+      --ink: black;                /* hovedtekst */
+      --muted: dimgray;            /* sekundÃ¦r tekst */
+
+      --nav: darkslategray;        /* header */
+      --accent: seagreen;          /* knap */
+      --accent-hover: forestgreen; /* hover */
+
+      --white: white;
+      --border: lightgray;
+
+      --radius: 18px;
+      --shadow: 0 15px 35px rgba(0,0,0,0.15);
+
+      --max: 1100px;
+      --gap: 20px;
+
+      --font: Arial, Helvetica, sans-serif;
+    }
+
+    *{
+      box-sizing: border-box;
+    }
+
+    body{
+      margin:0;
+      font-family:var(--font);
+      background:var(--bg);
+      color:var(--ink);
+      line-height:1.6;
+    }
+
+    .container{
+      width:90%;
+      max-width:var(--max);
+      margin:auto;
+    }
+
+    /* ===== HEADER ===== */
+
+    .topbar{
+      background-color: #2F4F4FFF;
+      color: white;
+      padding:14px 0;
+    }
+
+    .topbar__inner{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    .logo{
+      font-weight:bold;
+      font-size:18px;
+    }
+
+    .nav{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+
+    .nav__link{
+      color:var(--white);
+      text-decoration:none;
+      padding:8px 12px;
+      border-radius:10px;
+      font-weight:bold;
+    }
+
+    .nav__link:hover{
+      background:gray;
+    }
+
+    /* ===== HERO ===== */
+
+    .hero{
+      padding:50px 0;
+    }
+
+    .hero__grid{
+      display:flex;
+      gap:var(--gap);
+      align-items:center;
+    }
+
+    .hero__img{
+    width:60%;
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+    }
+
+    .panel{
+      width:40%;
+      background:var(--white);
+      padding:25px;
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+    }
+
+    .lead{
+      color:var(--muted);
+    }
+
+    /* ===== BUTTONS ===== */
+
+    .btn{
+      display:inline-block;
+      padding:10px 18px;
+      border-radius:12px;
+      text-decoration:none;
+      font-weight:bold;
+      border:1px solid var(--border);
+    }
+
+    .btn--primary{
+      background:var(--accent);
+      color:var(--white);
+    }
+
+    .btn--primary:hover{
+      background:var(--accent-hover);
+    }
+
+    /* ===== SECTIONS ===== */
+
+    .section{
+      padding:60px 0;
+    }
+
+    .section--alt{
+      background:var(--white);
+    }
+
+    .section h2{
+      margin-bottom:20px;
+    }
+
+    /* ===== CARDS ===== */
+    .flex-row{
+      display:flex;
+      gap:var(--gap);
+      flex-wrap:wrap;
+    }
+
+    .card{
+      flex:1;
+      min-width:250px;
+      background:var(--white);
+      padding:20px;
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+
+    }
+
+    .card h3{
+      margin-top:0;
+    }
+
+    /* ===== FOOTER ===== */
+    .footer{
+      background:var(--nav);
+      color:var(--white);
+      text-align:center;
+      padding:20px 0;
+    }
+
+    footer a{
+      color: #9ED8FF;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media(max-width:900px){
+
+      .hero__grid{
+        flex-direction:column;
+      }
+
+      .hero__img,
+      .panel{
+        width:100%;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="topbar">
+  <div class="container topbar__inner">
+
+    <div class="logo">
+      ♻️ Danmark mod Madspild
+    </div>
+
+    <nav class="nav" aria-label="Menu">
+      <a class="nav__link" href="index.html">Forside</a>
+      <a class="nav__link" href="Hvad.html">Hvad er madspild?</a>
+      <a class="nav__link" href="Gøre.html">Hvad kan DU gøre?</a>
+      <a class="nav__link" href="HvsR.html">Hjemmet vs Restauranter</a>
+      <a class="nav__link" href="Stat.html">Fakta</a>
+      <a class="nav__link" href="verdensmaal.html">Verdensmål</a>
+      <a class="nav__link" href="kontakt.html">Kontakt</a>
+    </nav>
+
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero__grid">
+
+      <!-- BILLEDE -->
+      <img class="hero__img"
+           src="madspild.jpg"
+           alt="Billede der viser madspild" />
+
+      <!-- TEKSTPANEL -->
+      <div class="panel">
+        <h1>Hvad er madspild?</h1>
+
+        <p class="lead">
+          Madspild er mad, der kunne være spist, men som bliver smidt ud.
+          Her forklarer vi forskellen på madspild og madaffald, og hvor i kæden det sker.
+        </p>
+
+        <a class="btn btn--primary" href="#forklaring">Læs forklaringen</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FORKLARING: 3 BOKSE -->
+  <section class="section" id="forklaring">
+    <div class="container">
+
+      <h2>De vigtigste ting at vide</h2>
+      <p class="lead">
+        Her er en kort forklaring på begreberne, så man hurtigt forstår problemet.
+      </p>
+
+      <div class="flex-row">
+
+        <article class="card">
+          <h3>1) Definition af madspild</h3>
+          <p>
+            <strong>Madspild</strong> er spiselige fødevarer, som ender i skraldespanden,
+            selvom de kunne være spist. Det kan fx være rester, frugt/grønt, brød eller madvarer,
+            der bliver glemt i køleskabet.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>2) Madspild vs. madaffald</h3>
+          <p>
+            <strong>Madaffald</strong> er alt affald fra mad, både spiseligt og uspiseligt.
+            <strong>Madspild</strong> er den del, der stadig var spiselig.
+          </p>
+          <ul>
+            <li><strong>Uspiseligt:</strong> skræller, ben, kaffegrums</li>
+            <li><strong>Madspild:</strong> rester, brød, hel frugt/grønt</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>3) Hvor i kæden sker det?</h3>
+          <ol>
+            <li><strong>Landbrug/produktion:</strong> sortering, overproduktion, fejl i logistik</li>
+            <li><strong>Butikker:</strong> varer når udløb, for store bestillinger, opbevaring</li>
+            <li><strong>Hjem:</strong> impulskøb, for store portioner, misforstået datomærkning</li>
+          </ol>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DANMARK: EKSTRA TEKST + BOKSE -->
+  <section class="section section--alt">
+    <div class="container">
+
+      <h2>Madspild i Danmark</h2>
+      <p class="lead">
+        I Danmark sker madspild både i hjemmet og i servicesektoren (fx butikker og restauranter).
+        Når mad bliver smidt ud, er ressourcer som vand, energi og transport brugt uden at give nytte.
+      </p>
+
+      <div class="flex-row">
+        <article class="card">
+          <h3>Hvorfor er det et problem?</h3>
+          <ul>
+            <li><strong>Penge:</strong> mad der smides ud = unødige udgifter</li>
+            <li><strong>Klima:</strong> mere spild = mere CO₂ fra produktion og transport</li>
+            <li><strong>Ressourcer:</strong> vand, jord og energi bliver spildt</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Typiske årsager</h3>
+          <ul>
+            <li>For store indkøb uden plan</li>
+            <li>Forkert opbevaring (maden holder kortere)</li>
+            <li>Uklare vaner omkring “bedst før”</li>
+            <li>Restemad bliver ikke brugt</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Hurtig huskeregel</h3>
+          <p>
+            <strong>Planlæg → Opbevar → Brug rester → Forstå datoer → Frys ned</strong>
+          </p>
+          <p>
+            Hvis man gør de 5 ting, kan man ofte skære meget af madspildet derhjemme.
+          </p>
+        </article>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- GUIDE: SÅDAN MODARBEJDER VI MADSPILD -->
+  <section class="section">
+    <div class="container">
+
+      <h2>Guide: Sådan kan vi modarbejde madspild</h2>
+      <p class="lead">Konkrete ting, man kan gøre i hverdagen.</p>
+
+      <div class="flex-row">
+
+        <article class="card">
+          <h3>I hjemmet</h3>
+          <ul>
+            <li>Lav en lille madplan (2–3 retter)</li>
+            <li>Tjek køleskab/fryser før du handler</li>
+            <li>Lav mindre portioner eller gem resten</li>
+            <li>Brug rester som frokost eller “reste-dag”</li>
+            <li>Frys mad ned og skriv dato på</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Datomærkning (vigtigt)</h3>
+          <ul>
+            <li><strong>Sidste anvendelsesdato:</strong> må ikke overskrides</li>
+            <li><strong>Bedst før:</strong> handler ofte om kvalitet – brug sanserne</li>
+            <li>Opbevar maden korrekt, så den holder længere</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Butikker & virksomheder</h3>
+          <ul>
+            <li>Bestil smartere (mindre overkøb)</li>
+            <li>Nedsæt pris i tide (“sidste chance”)</li>
+            <li>Mål hvad der ryger ud og find de største syndere først</li>
+            <li>Donér varer, når det er muligt</li>
+          </ul>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <h2>Kontakt os</h2>
+    <p><strong>Grøn Fremtid ApS</strong></p>
+    <p>Bæredygtighedsvej 12, 2100 København Ø</p>
+    <p>Tlf: +45 12 34 56 78 | Email: info@groenfremtid.dk</p>
+    <a href="https://www.dr.dk/mitliv/madspilds-quiz-hvor-laenge-holder-daasemad-og-hvor-kold-skal-fryseren-vaere">klick her for at tage quiz om madspild!</a>
+  </div>
+</footer>
+
+</body>
+</html>

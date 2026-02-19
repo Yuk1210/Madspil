@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <title>Madspild i Hjemmet vs Resturanter</title>
+
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: beige;
+    color: dimgray;
+    line-height: 1.6;
+  }
+
+  /* Header */
+  .header-container{
+    max-width:1100px;
+    margin:0 auto;
+    padding:0 40px;
+  }
+
+  .topbar {
+    background-color: #2F4F4F;
+    color: white;
+    padding: 8px 0;
+  }
+
+  .topbar__inner{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+  }
+
+  .logo{
+    font-weight:bold;
+    font-size:16px;
+  }
+
+  .nav{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+  }
+
+  .nav__link{
+    color:white;
+    text-decoration:none;
+    padding:6px 10px;
+    border-radius:8px;
+    font-weight:600;
+    font-size:14px;
+  }
+
+  .nav__link:hover{
+    background:gray;
+  }
+
+  /* Hero section */
+  .hero {
+    height: 300px;
+    background-image: url("https://images.unsplash.com/photo-1516594798947-e65505dbb29d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+  }
+
+  .hero-overlay {
+    background-color: rgba(0,0,0,0.4);
+    padding: 40px;
+    border-radius: 10px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  /* Content */
+  .container {
+    max-width: 1100px;
+    margin: 80px auto;
+    padding: 0 40px;
+  }
+
+  .section-title {
+    text-align: center;
+    margin-bottom: 60px;
+    background-color: #2F4F4F;
+    border-radius: 12px;
+    padding: 20px;
+  }
+
+  .section-title h2 {
+    font-size: 30px;
+    color: White;
+    margin-bottom: 10px;
+  }
+
+  .section-title p {
+    font-size: 15px;
+    color: darkgray;
+    margin-bottom: 10px;
+  }
+
+  .problem-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+  }
+
+  .problem-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+  }
+
+  .problem-card h3 {
+    margin-bottom: 15px;
+    color: green;
+  }
+
+  .problem-card ul {
+    padding-left: 20px;
+  }
+
+  .problem-card li {
+    margin-bottom: 8px;
+  }
+
+  /* Footer */
+  footer {
+    clear: both;
+    background-color: #2F4F4FFF;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  footer a{
+    color: #9ED8FF;
+  }
+
+</style>
+</head>
+
+<body>
+
+<header class="topbar">
+  <div class="header-container topbar__inner">
+
+    <div class="logo">
+      ♻️ Danmark mod Madspild
+    </div>
+
+    <nav class="nav" aria-label="Menu">
+      <a class="nav__link" href="index.html">Forside</a>
+      <a class="nav__link" href="Hvad.html">Hvad er madspild?</a>
+      <a class="nav__link" href="Gøre.html">Hvad kan DU gøre?</a>
+      <a class="nav__link" href="HvsR.html">Hjemmet vs Restauranter</a>
+      <a class="nav__link" href="Stat.html">Fakta</a>
+      <a class="nav__link" href="verdensmaal.html">Verdensmål</a>
+      <a class="nav__link" href="kontakt.html">Kontakt</a>
+    </nav>
+
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-overlay">
+    <h1>Madspild i Hjemmet vs. Resturanter</h1>
+    <p>Hvor opstår madspild, og hvorfor?</p>
+  </div>
+</section>
+
+<div class="container">
+  <div class="problem-grid">
+    <div class="problem-card">
+      <h3>Madspild i tal</h3>
+      <li>Husholdninger: 261.000 ton mad spildes årligt i danske hjem.</li>
+      <li>Servicesektoren: 227.000 ton mad spildes årligt i servicesektoren.</li>
+      <li>Detailhandel: 163.000 ton årligt – svarer til 72% af servicesektorens madspild.</li>
+      <li>Specialforretninger: 12.000 ton årligt (slagtere, fiskeforretninger, grønthandlere).</li>
+      </ul>
+    </div>
+
+    <div class="problem-card">
+      <h3>Globalt Perspektiv, Stop Sult</h3>
+
+      <p>I 2025 var omkring <strong>673 millioner mennesker</strong> ramt af sult.
+        Det svarer til én ud af 12 mennesker globalt.</p>
+      <br>
+      <p>Afskaffelse af sult kræver bæredygtigt landbrug,
+        internationalt samarbejde og investering i teknologi.</p>
+      <br>
+      <p>Verdensmålene har som mål at afskaffe sult inden 2030.</p>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="container">
+  <div class="section-title">
+    <h2>Opdeling af problemet</h2>
+    <p>Madspild opstår i flere led, både hos privatpersoner og i ergvervslivet.</p>
+  </div>
+
+  <div class="problem-grid">
+    <div class="problem-card">
+      <h3>Privatpersoner</h3>
+      <ul>
+        <li>Manglende planlægning af indkøb</li>
+        <li>Dårlig forståelse af datomærkning</li>
+        <li>For store portioner</li>
+        <li>Glemmer rester i køleskabet</li>
+      </ul>
+    </div>
+
+    <div class="problem-card">
+      <h3>Supermarkeder</h3>
+      <ul>
+        <li>Overfyldte hylder</li>
+        <li>Varer tæt på udløbsdato</li>
+        <li>Fejl i lagerstyring</li>
+        <li>Beskadiget emballage</li>
+      </ul>
+    </div>
+
+    <div class="problem-card">
+      <h3>Restauranter</h3>
+      <ul>
+        <li>Buffet overskud</li>
+        <li>For store portioner</li>
+        <li>Fejl i planlægning af råvarer</li>
+        <li>Kundernes madrester</li>
+      </ul>
+    </div>
+
+    <div class="problem-card">
+      <h3>Produktion</h3>
+      <ul>
+        <li>Fejlproduktion</li>
+        <li>Strenge kvalitetskrav</li>
+        <li>Transportskader</li>
+        <li>Overproduktion</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <h2>Kontakt os</h2>
+  <p><strong>Grøn Fremtid ApS</strong></p>
+  <p>Bæredygtighedsvej 12, 2100 København Ø</p>
+  <p>Tlf: +45 12 34 56 78 | Email: info@groenfremtid.dk</p>
+  <a href="https://www.dr.dk/mitliv/madspilds-quiz-hvor-laenge-holder-daasemad-og-hvor-kold-skal-fryseren-vaere">klick her for at tage quiz om madspild!</a>
+</footer>
+
+</body>
+</html>

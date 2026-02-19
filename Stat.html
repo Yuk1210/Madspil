@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <title>Danmarks Statistik for madspild</title>
+
+    <style>
+        /* Imrane */
+        /* Den øverste boks */
+        body {
+            font-family: Arial;
+            margin: 0;
+            background-color: #FAF0E6;
+        }
+
+        /* den øverste overskrift boks */
+        .topbar{
+            background-color: #2F4F4FFF;
+            color:white;
+            padding:14px 0;
+        }
+
+        .topbar__inner{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        .logo{
+            font-weight:bold;
+            font-size:18px;
+        }
+
+        .nav{
+            display:flex;
+            gap:12px;
+            flex-wrap:wrap;
+        }
+
+        .nav__link{
+            color:var(--white);
+            text-decoration:none;
+            padding:8px 12px;
+            border-radius:10px;
+            font-weight:bold;
+        }
+
+        .nav__link:hover{
+            background:gray;
+        }
+
+        /* venstre boks Layout */
+        .layout {
+            width: 90%;
+            margin: 20px auto;
+        }
+
+        /* NY: samlet venstre side */
+        .left-side {
+            width: 25%;
+            float: left;
+        }
+
+        /* boksen til venstre side */
+        .sidebar {
+            background-color: #3a6565;
+            color: white;
+            padding: 20px;
+            border-radius: 25px;
+            margin-bottom: 20px;
+        }
+
+        /* kassens bredde og position */
+        .main-content {
+            width: 70%;
+            float: right;
+        }
+
+        /* dette er de hvide bokse */
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 25px;
+        }
+
+        /* Dette er den lange tynde linje under overskrifterne i boksen */
+        .card h2 {
+            border-bottom: 3px solid #2F4F4FFF;
+            padding-bottom: 5px;
+            color: green;
+        }
+
+        /* billedernes størresle */
+        img {
+            width: 250px;
+            height: 250px;
+            margin: 5px;
+        }
+
+        /* Footer */
+        footer {
+            clear: both;
+            background-color: #2F4F4FFF;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        footer a{
+            color: #9ED8FF;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header class="topbar">
+    <div class="container topbar__inner">
+
+        <div class="logo">
+            ♻️ Danmark mod Madspild
+        </div>
+
+        <nav class="nav" aria-label="Menu">
+            <a class="nav__link" href="index.html">Forside</a>
+            <a class="nav__link" href="Hvad.html">Hvad er madspild?</a>
+            <a class="nav__link" href="Gøre.html">Hvad kan DU gøre?</a>
+            <a class="nav__link" href="HvsR.html">Hjemmet vs Restauranter</a>
+            <a class="nav__link" href="Stat.html">Fakta</a>
+            <a class="nav__link" href="verdensmaal.html">Verdensmål</a>
+            <a class="nav__link" href="kontakt.html">Kontakt</a>
+        </nav>
+
+    </div>
+</header>
+
+<div class="layout">
+
+    <!-- ===== Venstre Sidebar ===== -->
+    <div class="left-side">
+
+        <div class="sidebar">
+            <h3>Hvad mener danskerne om madspild?</h3>
+
+            <p>
+                Ifølge en Epinion-undersøgelse, som Folkekirkens Nødhjælp har fået lavet i forbindelse med Danmarks Nationale Madspildsdag i 2022, så svarer hver anden dansker, at inflation, fødevarekrise og klimaforandringer får dem til at smide mindre mad ud.
+            </p>
+
+            <p>
+                Forbrugerne går derfor aktivt til kamp mod madspild, og hele 60 procent mener, at det er den enkelte dansker, som har det største ansvar for at mindske madspild.
+            </p>
+
+            <p>
+                Men det er også vigtigt, at supermarkederne tager ansvar. Det mener 89 procent af danskerne, og næsten lige så mange mener, at det er vigtigt, at fødevareproducenterne mindsker deres madspild.
+            </p>
+
+            <p>
+                Det kan være svært at finde ud af, hvilke virksomheder, der rent faktisk arbejder aktivt for at mindske madspild. Kun 23 procent danskere mener, at de ved nok om dette.
+            </p>
+
+            <p><strong>Madspild i tal</strong></p>
+
+            <ul>
+                <li>Madspild er en af de største kilder til CO2-udledning. Dels pga. CO2-udledning fra destruktion af madspildet og dels fra produktion af nye fødevarer. I 2024 smed vi 873.014 ton mad ud i Danmark. Fødevaresektoren alene stod for to tredjedele af den enorme mængde madspild.</li>
+            </ul>
+
+            <p><strong>Madspild i tal</strong></p>
+
+            <ul>
+                <li>Madspild er en af de største kilder til CO2-udledning. Dels pga. CO2-udledning fra destruktion af madspildet og dels fra produktion af nye fødevarer. I 2024 smed vi 873.014 ton mad ud i Danmark. Fødevaresektoren alene stod for to tredjedele af den enorme mængde madspild.</li>
+            </ul>
+        </div>
+
+        <div class="sidebar">
+            <h3>Hvorfor er madspild dårligt?</h3>
+
+            <ul>
+                <li>Øger CO₂-udledning</li>
+                <li>Spilder vand og energi</li>
+                <li>Forværrer klimaforandringer</li>
+                <li>Koster milliarder</li>
+                <li>Øger global sult</li>
+                <li>Belaster landbruget</li>
+                <li>Fylder lossepladser</li>
+                <li>Spilder arbejdskraft</li>
+                <li>Skader naturen</li>
+                <li>Skaber global ulighed</li>
+            </ul>
+            <img src="https://fjeldgaardshop.dk/cdn/shop/collections/stop-madspild.png?v=1754463016"
+                 class="sidebar-image">
+        </div>
+
+    </div>
+
+    <!-- ===== Højre Indhold ===== -->
+    <div class="main-content">
+
+        <div class="card">
+            <h2>Danmark – Madspild</h2>
+
+            <p>
+                I Danmark smider vi hvert år mere end <Strong>800.000 ton </Strong> spiselig mad ud. Samtidig er der et stigende antal mennesker, som mangler mad. FødevareBanken er Danmarks største madspildsorganisation. I 2024 reddede vi <Strong> 1.626 ton </Strong> mad fra at blive til madspild. Det blev til <Strong>4,1 millioner</Strong> måltider og sparede 698 ton CO2.
+            </p>
+
+            <img src="https://imgproxy.byhand.nu/imgproxy/n7cQekXkyeRkLFOJS1Bnm7eWlOiVEBmC71zKZ7q7Py0/rt:auto/w:0/h:0/g:sm/el:0/cb:12345/q:80/aHR0cHM6Ly93d3cubm9lZGhqYWVscC5kay93cC1jb250ZW50L3VwbG9hZHMvc2l0ZXMvMi8yMDIwLzEyL21hZHNwaWxkLXByb2NlbnR2ZXJkZW5zcGxhbi0xMDAweDEwMDAtc29maWEtYS5wbmc.png">
+
+            <img src="https://imgproxy.byhand.nu/imgproxy/ZMaheHuG1kRPE9OyO86iTmfQucevK0o5rpEjE12omtw/rt:auto/w:0/h:0/g:sm/el:0/cb:12345/q:80/aHR0cHM6Ly93d3cubm9lZGhqYWVscC5kay93cC1jb250ZW50L3VwbG9hZHMvc2l0ZXMvMi8yMDIwLzEyL21hZHNwaWxkLXByb2NlbnR2ZXJkZW5zcGxhbi0xMDAweDEwMDAtc29maWEtYy5wbmc.png">
+
+            <img src="https://imgproxy.byhand.nu/imgproxy/xEd_6GKN8QUL1AzY8h9HriQZrmxJO6KqholjuoQWI8c/rt:auto/w:0/h:0/g:sm/el:0/cb:12345/q:80/aHR0cHM6Ly93d3cubm9lZGhqYWVscC5kay93cC1jb250ZW50L3VwbG9hZHMvc2l0ZXMvMi8yMDIwLzEyL21hZHNwaWxkLXByb2NlbnR2ZXJkZW5zcGxhbi0xMDAweDEwMDAtc29maWEtZi5wbmc.png">
+        </div>
+
+        <div class="card">
+
+            <h2>Madspild i Danmark – Statistik</h2>
+
+            <p><strong>Den samlede mængde af madspild er 881.062 ton om året.</strong></p>
+
+            <p>Det fordeler sig således på de fem sektorer:</p>
+
+            <ul>
+                <li><strong>Fødevareindustri:</strong> 457.172 ton (51,9%)</li>
+                <li><strong>Husholdninger:</strong> 235.000 ton (26,7%)</li>
+                <li><strong>Detail og engros:</strong> 103.906 ton (11,8%)</li>
+                <li><strong>Primærproduktion:</strong> 42.984 ton (4,9%)</li>
+                <li><strong>Servicesektor:</strong> 42.000 ton (4,8%)</li>
+            </ul>
+
+            <p><em>Kilde: Miljøstyrelsen</em></p>
+
+
+
+            <p>
+                Madspild i Danmark udleder hvert år <strong>2 mio. ton CO2</strong>.
+                Det svarer til <strong>3,4% af Danmarks samlede CO2-udledninger</strong>.
+                Madspild koster samfundet <strong>11 mia. kr. om året</strong>.
+            </p>
+
+
+
+            <h3>Historisk udvikling</h3>
+
+            <p>
+                I 2006 gennemførte Områdechef i Landbrug & Fødevarer Klaus Jørgensen
+                de første beregninger om husholdningernes madspild.
+            </p>
+
+            <p>
+                I 2008 igangsatte Selina Juul forbrugerbevægelsen
+                <strong>Stop Spild Af Mad</strong>.
+            </p>
+
+            <p>
+                I slutningen af 2008 afskaffede detailkæden
+                <strong>REMA 1000 Danmark</strong> mængderabatter og indførte styk-rabatter.
+                Dette blev startskuddet til en årelang kamp mod madspild.
+            </p>
+
+            <p>
+                Siden er kampen mod madspild blevet en folkebevægelse.
+                Politikere, organisationer, virksomheder og forbrugere arbejder
+                aktivt med at reducere madspild.
+            </p>
+
+            <p>
+                Ifølge en gallupundersøgelse fra Kantar Public for Stop Spild Af Mad (2023)
+                angiver <strong>94% af danskerne</strong>, at der er kommet mere fokus på madspild
+                end for 15 år siden.
+            </p>
+
+            <p><em>Kilde: Landbrug & Fødevarer, Kantar Public for Stop Spild Af Mad</em></p>
+
+
+            <img src="https://stopspildafmad.org/wp-content/uploads/2020/10/3.jpg"
+                 style="width:500px; height:auto; display:block; margin:auto;">
+
+        </div>
+
+        <div class="card">
+            <h2>En seriøs løsning på madspild i Danmark</h2>
+
+            <p>
+                FødevareBanken er fødevarebranchens professionelle løsning på optimering og reduktion af madspild. Vi arbejder systematisk for at undgå madspild og sikre, at maden leveres videre til mennesker i svære livssituationer. Vi kalder det: fra madspild til måltider.
+            </p>
+
+            <img src="https://foedevarebanken.dk/wp-content/uploads/2025/01/Foedevarebanken-Madspild-i-tal-grafik1-min-1536x411.png"
+                 style="width:500px; height:auto; display:block; margin:auto;">
+
+            <p>
+                Mere end to tredjedele af den samlede mængde madspild i Danmark kommer fra fødevaresektoren. I mere end 15 år har vi indsamlet overskudsmad fra fødevarebranchen og distribueret det til de sociale organisationers måltidsindsatser, som serverer mad til mennesker, der har brug for en hjælpende hånd og et nærende måltid.
+            </p>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    <h2>Kontakt os</h2>
+    <p><strong>Grøn Fremtid ApS</strong></p>
+    <p>Bæredygtighedsvej 12, 2100 København Ø</p>
+    <p>Tlf: +45 12 34 56 78 | Email: info@groenfremtid.dk</p>
+    <a href="https://www.dr.dk/mitliv/madspilds-quiz-hvor-laenge-holder-daasemad-og-hvor-kold-skal-fryseren-vaere">klick her for at tage quiz om madspild!</a>
+
+</footer>
+
+</body>
+</html>

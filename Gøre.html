@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <title>Hvad kan DU gøre?</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: beige;
+      color: dimgray;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    .header-container{
+      max-width:1100px;
+      margin:0 auto;
+      padding:0 40px;
+    }
+
+    .topbar {
+      background-color: #2F4F4F;
+      color: white;
+      padding: 8px 0;
+    }
+
+    .topbar__inner{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    .logo{
+      font-weight:bold;
+      font-size:16px;
+    }
+
+    .nav{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+
+    .nav__link{
+      color:white;
+      text-decoration:none;
+      padding:6px 10px;
+      border-radius:8px;
+      font-weight:600;
+      font-size:14px;
+    }
+
+    .nav__link:hover{
+      background:gray;
+    }
+
+    /* Hero section */
+    .hero {
+      height: 300px;
+      background-image: url("https://images.unsplash.com/photo-1542838132-92c53300491e");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+
+    .hero-overlay {
+      background-color: rgba(0,0,0,0.4);
+      padding: 40px;
+      border-radius: 10px;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 18px;
+    }
+
+    /* Content */
+    .container {
+      max-width: 1100px;
+      margin: 80px auto;
+      padding: 0 40px;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 60px;
+      background-color: #2F4F4F;
+      border-radius: 12px;
+      padding: 15px;
+    }
+
+    .section-title h2 {
+      font-size: 32px;
+      color: white;
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      font-size: 15px;
+      color: darkgray;
+      margin-bottom: 10px;
+    }
+
+    .tips {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 40px;
+    }
+
+    .tip-card {
+      background-color: white;
+      padding: 30px;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+    }
+
+    .tip-card h3 {
+      margin-bottom: 15px;
+      color: green;
+    }
+
+    .tip-card p {
+      font-size: 15px;
+    }
+
+    /* CTA */
+    .cta {
+      margin-top: 80px;
+      background-color: seagreen;
+      color: white;
+      padding: 30px;
+      text-align: center;
+      border-radius: 15px;
+    }
+
+    .cta h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .cta button {
+      padding: 15px 35px;
+      font-size: 16px;
+      border: none;
+      border-radius: 30px;
+      background-color: white;
+      color: seagreen;
+      transition: 0.3s ease;
+      cursor: pointer;
+    }
+
+    .cta button:hover {
+      background-color: forestgreen;
+    }
+
+    /* Footer */
+    footer {
+      clear: both;
+      background-color: #2F4F4FFF;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    footer a{
+      color: #9ED8FF;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<header class="topbar">
+  <div class="header-container topbar__inner">
+
+    <div class="logo">
+      ♻️ Danmark mod Madspild
+    </div>
+
+    <nav class="nav" aria-label="Menu">
+      <a class="nav__link" href="index.html">Forside</a>
+      <a class="nav__link" href="Hvad.html">Hvad er madspild?</a>
+      <a class="nav__link" href="Gøre.html">Hvad kan DU gøre?</a>
+      <a class="nav__link" href="HvsR.html">Hjemmet vs Restauranter</a>
+      <a class="nav__link" href="Stat.html">Fakta</a>
+      <a class="nav__link" href="verdensmaal.html">Verdensmål</a>
+      <a class="nav__link" href="kontakt.html">Kontakt</a>
+    </nav>
+
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-overlay">
+    <h1>Hvad kan DU gøre?</h1>
+    <p>Små valg i hverdagen kan gøre en stor forskwl for klimaet og din økonomi.</p>
+  </div>
+</section>
+
+<div class="container">
+
+  <div class="tips">
+
+    <div class="tip-card">
+      <h3>Danskerne går forrest</h3>
+
+      <p><strong>87% af danskerne</strong> går i nogen, høj eller meget høj grad op i at mindske madspild.
+        I Norge er tallet 84%. Det viser en stærk skandinavisk kultur,
+        hvor bekæmpelse af madspild er vigtigt.</p>
+
+      <p>De <strong>700.000 ton spiselige fødevarer</strong>, der årligt spildes i Danmark,
+        svarer til <strong>3,8% af Danmarks samlede CO2-udledning</strong>.</p>
+    </div>
+
+    <div class="tip-card">
+      <h3>Madspild vs. Madaffald</h3>
+
+      <p><strong>Madaffald</strong> er alle madrester – både spiselige og ikke-spiselige.</p>
+
+      <p><strong>Madspild</strong> er den del af madaffaldet,
+        som kunne være blevet spist, men er blevet smidt ud.</p>
+
+      <p><strong>Øvrigt madaffald</strong> er fx æggeskaller,
+        bananskræller og ben – altså dele, der ikke kan spises.</p>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="section-title">
+    <h2>5 konkrete handlinger mod madspild</h2>
+    <p>Start i dag, det er nemmere end du tror.</p>
+  </div>
+
+  <div class="tips">
+
+    <div class="tip-card">
+      <h3>Planlæg dine indkøb</h3>
+      <p>Lav en madplan og skriv en indkøbsliste. Undgå impulskøb og køb kun det, du har brug for.</p>
+    </div>
+
+    <div class="tip-card">
+      <h3>Tjek køleskabet før du handler</h3>
+      <p>Se hvad du allerede har, så du undgår at købe varer, der ender med at blive smidt ud.</p>
+    </div>
+
+    <div class="tip-card">
+      <h3>Forstå datomærkning</h3>
+      <p>“Bedst før” betyder ofte stadig spiseligt. “Sidste anvendelsesdato” handler om fødevaresikkerhed.</p>
+    </div>
+
+    <div class="tip-card">
+      <h3>Brug rester kreativt</h3>
+      <p>Lav suppe, tærte eller pastaretter. Se rester som en mulighed for nye retter.</p>
+    </div>
+
+    <div class="tip-card">
+      <h3>Frys maden ned</h3>
+      <p>Frys brød og rester i portioner – så holder maden længere og kan bruges senere.</p>
+    </div>
+  </div>
+
+  <div class="cta">
+    <h2>Tag første skridt i dag</h2>
+    <p>Vælg én vane og begynd allerede denne uge.</p>
+    <button>Jeg vil reducere mit madspild</button>
+  </div>
+</div>
+
+<footer>
+  <h2>Kontakt os</h2>
+  <p><strong>Grøn Fremtid ApS</strong></p>
+  <p>Bæredygtighedsvej 12, 2100 København Ø</p>
+  <p>Tlf: +45 12 34 56 78 | Email: info@groenfremtid.dk</p>
+  <a href="https://www.dr.dk/mitliv/madspilds-quiz-hvor-laenge-holder-daasemad-og-hvor-kold-skal-fryseren-vaere">klick her for at tage quiz om madspild!</a>
+</footer>
+
+</body>
+</html>
