@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="da">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>FN’s Verdensmål</title>
+
+    <style>
+
+        /* ===== ROOT ===== */
+        :root{
+            --bg:#f6f1e6;
+            --ink:#22312d;
+            --nav:#3b4543;
+            --radius:18px;
+            --shadow:0 18px 40px rgba(0,0,0,.12);
+            --max:1120px;
+            --gap:20px;
+            --font:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+        }
+
+        *{box-sizing:border-box;}
+
+        body{
+            margin:0;
+            font-family:var(--font);
+            color:var(--ink);
+            background:var(--bg);
+            line-height:1.6;
+        }
+
+        .container{
+            width:min(var(--max), 100% - 40px);
+            margin:0 auto;
+        }
+
+        /* ===== NAVIGATION ===== */
+        .topbar{
+            background:var(--nav);
+            position:sticky;
+            top:0;
+            z-index:50;
+        }
+
+        .topbar__inner{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:14px 0;
+        }
+
+        .logo{
+            color:white;
+            font-weight:bold;
+            font-size:18px;
+        }
+
+        .nav{
+            display:flex;
+            flex-wrap:wrap;
+            gap:12px;
+        }
+
+        .nav__link{
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+            padding:8px 12px;
+            border-radius:10px;
+        }
+
+        .nav__link:hover{
+            background:rgba(255,255,255,.15);
+        }
+
+        /* ===== PAGE HEADER ===== */
+        .page-head{
+            padding:40px 0 20px 0;
+        }
+
+        .page-head h1{
+            margin:0 0 10px;
+        }
+
+        /* ===== SECTION ===== */
+        .section{
+            padding:40px 0;
+        }
+
+        .grid-3{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+            gap:var(--gap);
+        }
+
+        .card{
+            background:white;
+            padding:20px;
+            border-radius:var(--radius);
+            box-shadow:var(--shadow);
+        }
+
+        /* ===== BILLEDER ===== */
+
+        .img-grid{
+            width:100%;
+            height:auto;
+            margin-top:15px;
+            border-radius:12px;
+        }
+
+        .img-icon{
+            width:220px;   /* HER kan du ændre bredde */
+            height:220px;  /* HER kan du ændre højde */
+            display:block;
+            margin:15px auto;
+        }
+
+        /* ===== FOOTER ===== */
+        .footer{
+            background:var(--nav);
+            color:white;
+            text-align:center;
+            padding:20px 0;
+            margin-top:40px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header class="topbar">
+    <div class="container topbar__inner">
+        <div class="logo">♻️ Danmark mod Madspild</div>
+        <nav class="nav" aria-label="Menu">
+            <a class="nav__link" href="index.html">Forside</a>
+            <a class="nav__link" href="Hvad.html">Hvad er madspild?</a>
+            <a class="nav__link" href="Gøre.html">Hvad kan DU gøre?</a>
+            <a class="nav__link" href="HvsR.html">Hjemmet vs Restauranter</a>
+            <a class="nav__link" href="Stat.html">Fakta</a>
+            <a class="nav__link" href="fn.html">Verdensmål</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <header class="page-head">
+        <div class="container">
+            <h1>FN’s Verdensmål & madspild</h1>
+            <p>
+                Madspild er ikke kun et lokalt problem, men en global udfordring.
+                FN’s Verdensmål sætter fokus på bæredygtig udvikling, og især Verdensmål 12
+                understreger behovet for ansvarligt forbrug og produktion.
+                Reduktion af madspild er en konkret måde at arbejde hen imod dette mål.
+            </p>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="grid-3">
+
+                <article class="card">
+                    <p>
+                        De Forenede Nationer (FN) har opstillet 17 verdensmål
+                        for at skabe en mere bæredygtig og retfærdig verden.
+                        Verdensmålene guider lande, virksomheder og borgere
+                        til at tage ansvar for klima, miljø og ressourcer.
+                    </p>
+
+                    <img class="img-grid"
+                         src="https://www.verdensmaal.org/media/fetch/c_thumb,f_auto,q_auto,h_675,w_900/7ccef63a4de655d0b4dac4cfdc14721e16ee6c94_grid.png%3Fauto%3Dcompress%2Cformat"
+                         alt="FN Verdensmål oversigt">
+                </article>
+
+                <article class="card">
+                    <h3>Verdensmål 12</h3>
+
+                    <img class="img-icon"
+                         src="https://lekon.dk/wp-content/uploads/2021/02/Verdensmaal-ikon-12-1024x1024.png"
+                         alt="FN Verdensmål 12 – Ansvarligt forbrug og produktion">
+
+                    <ul>
+                        <li>Mindre CO₂-udledning fra landbrug og transport</li>
+                        <li>Mindre energiforbrug i produktion og opbevaring</li>
+                        <li>Mindre pres på vandressourcer og landarealer</li>
+                    </ul>
+
+                    <p>
+                        Ved at reducere madspild undgår vi unødvendig udledning
+                        og overforbrug af naturressourcer.
+                        Dermed understøttes også Verdensmål 13 om klimaindsats.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Hvad kan jeg gøre?</h3>
+                    <ul>
+                        <li>Planlæg dine indkøb og undgå impulskøb</li>
+                        <li>Brug rester og lav “reste-dage”</li>
+                        <li>Forstå forskellen på “bedst før” og “sidste anvendelsesdato”</li>
+                        <li>Opbevar mad korrekt for at forlænge holdbarheden</li>
+                    </ul>
+
+                    <p>
+                        Små ændringer i hverdagen kan samlet set reducere
+                        madspild markant og bidrage til både Verdensmål 12 og 13.
+                    </p>
+
+                    <h3>Hvordan hjælper det klimaet?</h3>
+                    <ul>
+                        <li>Mindre CO₂ fra produktion og transport</li>
+                        <li>Mindre affald = mindre håndtering og forbrænding</li>
+                        <li>Mindre spild af vand og energi</li>
+                    </ul>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <h2>Kontakt os</h2>
+    <p><strong>Grøn Fremtid ApS</strong></p>
+    <p>Bæredygtighedsvej 12, 2100 København Ø</p>
+    <p>Tlf: +45 12 34 56 78 | Email: info@groenfremtid.dk</p>
+    <a href="https://www.dr.dk/mitliv/madspilds-quiz-hvor-laenge-holder-daasemad-og-hvor-kold-skal-fryseren-vaere">klick her for at tage quiz om madspild!</a>
+
+</footer>
+
+</body>
+</html>
